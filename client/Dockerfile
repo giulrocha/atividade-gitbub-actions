@@ -8,7 +8,7 @@ RUN npm install
 
 # Copia o restante do código e gera o build de produção
 COPY . .
-RUN npm run build --prod
+RUN npm run build
 
 # Etapa 2: Servidor Nginx para servir os arquivos estáticos
 FROM nginx:alpine
